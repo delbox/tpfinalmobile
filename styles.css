@@ -1,0 +1,163 @@
+/* Fuentes y estilos globales */
+/* Establece altura completa para html y body */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fondo fijo con pseudo-elemento */
+body::before {
+  content: "";
+  position: fixed; /* Se mantiene fijo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Envía el fondo detrás del contenido */
+  background: linear-gradient( #1db954, #191414);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient( #1db954, #191414);
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  padding: 20px;
+  background: #191414;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1db954;
+}
+
+main {
+  padding: 20px;
+}
+
+.ranking-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.ranking-list li {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+  margin: 10px 0;
+  padding: 10px;
+
+  transition: transform 0.2s;
+}
+
+.ranking-list li:hover {
+  transform: scale(1.05);
+}
+
+.ranking-list img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #1db954;
+}
+
+.song-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+  flex: 1;
+}
+
+.song-title,
+.song-artist {
+  background: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 3px 0;
+}
+
+.song-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.song-artist {
+  font-size: 1rem;
+  color: #1db954;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.btn-primary,
+.btn-secondary {
+  background: #1db954;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background: #17a443;
+}
+
+.btn-secondary {
+  background: #555;
+}
+
+.btn-secondary:hover {
+  background: #444;
+}
+
+#imageContainer {
+  margin-top: 20px;
+}
+
+#imageContainer canvas {
+  max-width: 100%;
+}
+
+
+.btn-danger {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s;
+}
+
+.btn-danger:hover {
+  background: #c0392b;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ranking Musical</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+      
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <header>
+      <h1>Diseño de Aplicaciones Web y Mobile TOP 5</h1>
+    </header>
+    <main>
+      <div class="button-group">
+        <button id="shuffleBtn" class="btn-primary">🔄 Mezclar Ranking</button>
+        <button id="createImgBtn" class="btn-secondary">📸 Crear Imagen</button>
+        <button id="deleteImgBtn" class="btn-danger" style="display: none;">🗑 Eliminar Imagen</button>
+      </div>
+      <ul id="ranking-list" class="ranking-list">
+        
+        <!-- Lista generada dinámicamente -->
+      </ul>
+      
+      <div id="imageContainer"></div>
+    </main>
+    <footer></footer>
+
+
+    <script src="script.js"></script>
+    
+
+  </body>
+</html>
